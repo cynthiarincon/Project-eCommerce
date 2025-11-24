@@ -30,6 +30,9 @@ nav ul{
     justify-content: space-around;
     list-style: none;
     background-color: $color2;
+li:hover{
+    color: $color1;
+}
 }
 
 video{
@@ -43,15 +46,23 @@ video{
 
 }
 
+
 .product-grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+.products{
+    width: 75%;
+    height: auto;
+h1{
+    background-color: $color1;
+}
+
 img{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: auto;
     margin: 5%;
-}}
+}}}
 
 form{
     text-align: center;

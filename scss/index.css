@@ -28,6 +28,9 @@ nav ul {
   list-style: none;
   background-color: #ffff57;
 }
+nav ul li:hover {
+  color: #28e5fa;
+}
 
 video {
   max-width: 100vw;
@@ -44,9 +47,16 @@ video {
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
 }
-.product-grid img {
-  width: 200px;
-  height: 200px;
+.product-grid .products {
+  width: 75%;
+  height: auto;
+}
+.product-grid .products h1 {
+  background-color: #28e5fa;
+}
+.product-grid .products img {
+  width: 100px;
+  height: auto;
   margin: 5%;
 }
 
