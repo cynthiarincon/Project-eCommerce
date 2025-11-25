@@ -1,0 +1,22 @@
+body {
+  background-color: #fffbe2;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #ffff57;
+  padding: 10%;
+  border-radius: 20px;
+}
+.contact-container img {
+  width: 200px;
+  height: auto;
+  border-radius: 20px;
+}
+
+form {
+  background-color: #28e5fa;
+  padding: 10% auto;
+}/*# sourceMappingURL=contact.css.map */
