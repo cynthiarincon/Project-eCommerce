@@ -3,20 +3,46 @@ body {
 }
 
 .contact-container {
+  background-color: #ffff57;
+  border-radius: 5%;
+}
+.contact-container .skinthia-logo {
+  width: 100px;
+  height: auto;
+  display: flex;
+  margin: 10% auto;
+}
+
+.contact-form {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: #ffff57;
-  padding: 10%;
+  padding: 1%;
   border-radius: 20px;
 }
-.contact-container img {
+.contact-form img {
   width: 200px;
   height: auto;
   border-radius: 20px;
+  display: none;
 }
 
 form {
-  background-color: #28e5fa;
   padding: 10% auto;
+}
+form label {
+  font-size: 1.5rem;
+}
+
+input {
+  padding: 2%;
+  border-radius: 10%;
+  border: none;
+  margin: 5%;
+  padding: 10px;
+}
+
+button {
+  border-radius: 5%;
+  border: none;
 }/*# sourceMappingURL=contact.css.map */

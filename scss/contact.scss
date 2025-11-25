@@ -6,21 +6,47 @@ body{
     background-color: #fffbe2;
 }
 
-
 .contact-container{
+    background-color: $color2;
+    border-radius: 5%;
+.skinthia-logo{
+    width: 100px;
+    height: auto;
+    display: flex;
+    margin: 10% auto;
+}}
+
+.contact-form{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: $color2;
-    padding: 10%;
+    padding: 1%;
     border-radius: 20px;
 img{
     width: 200px;
     height: auto;
     border-radius: 20px;
+    display: none
 }}
 
 form{
-    background-color: #28e5fa;
     padding: 10% auto;
+label{
+    font-size: 1.5rem;
+}}
+
+input{
+    padding: 2%;
+    border-radius: 10%;
+    border: none;
+    margin: 5%;
+    padding: 10px;
 }
+
+button{
+    border-radius: 5%;
+    border: none;
+}
+
+
+// img display for tab/desktop
