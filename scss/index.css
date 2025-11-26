@@ -39,7 +39,7 @@ nav ul li img {
   height: auto;
 }
 nav ul li img li:hover {
-  color: #28e5fa;
+  color: #ffff57;
 }
 
 .hero {
@@ -128,7 +128,7 @@ nav ul li img li:hover {
   margin: 10px;
 }
 .prod-btn:hover {
-  background-color: #28e5fa;
+  background-color: dimgray;
   color: white;
 }
 .prod-btn:active {
@@ -140,6 +140,19 @@ nav ul li img li:hover {
   width: 100%;
   height: auto;
   margin-top: 20px;
+}
+
+.contact-me {
+  text-align: center;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  width: 100px;
+  height: auto;
+  margin: 15px auto;
+  padding: 10px;
+}
+.contact-me a {
+  text-decoration: none;
 }
 
 form {
@@ -183,4 +196,38 @@ footer .socials img {
   width: 50px;
   height: auto;
   margin: 2%;
+}
+
+@media screen and (max-width: 800px) {
+  .hero-btn {
+    font-size: 1.1rem;
+    padding: 10px 22px;
+  }
+  .product-grid .products {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 800px) {
+  nav ul {
+    justify-content: space-between;
+    padding: 1% 10%;
+  }
+  .hero-btn {
+    font-size: 1.5rem;
+    padding: 16px 32px;
+    top: 70%;
+  }
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .product-grid .products {
+    width: 80%;
+    font-size: 1rem;
+  }
+  .ladies-img {
+    width: 80%;
+    margin: 40px auto;
+    display: block;
+  }
 }/*# sourceMappingURL=index.css.map */

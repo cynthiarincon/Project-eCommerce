@@ -10,6 +10,14 @@ body{
     font-family: $font1;
 }
 
+.coupon-code{
+    background-color: $color1;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+    padding: 1%;
+}
+
 .skinthia-logo{
     display: flex;
     flex-direction: row;
@@ -51,13 +59,14 @@ li:hover{
     grid-template-columns: 1fr; // mobile-first: one column
     gap: 20px;
     justify-items: center;
+    margin: 10px;
 
 .products{
     width: 75%;
     text-align: center;
     font-size: .5rem;
     border-radius: 5px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px lightslategray;
     padding: 10px;
     background: white;
 
@@ -88,17 +97,14 @@ li:hover{
     background-color: $color1;
     color: white;
     border: none;
-    &:hover{
-        background-color: $color1;
-        color: white;
-    }
-    &:active{
-        background-color: black;
-        color: $color2;
-    }
+&:hover{
+    background-color: dimgray;
+    color: white;
 }
-}
-}
+&:active{
+    background-color: black;
+    color: $color2;
+}}}}
 
 
 
@@ -110,9 +116,49 @@ footer{
     width: 50px;
     height: auto;
     margin: 2%;
+}}
+
+
+
+//MEDIA QUERIES
+//SCREENS UNDER 800PX
+@media screen and (max-width: 799px){
+
+.product-grid{
+    grid-template-columns: 1fr; // one column on small screens
 }
+.skinthia-logo{
+    width: 35%;
 }
+footer .socials img{
+    width: 45px;
+}}
 
-
-
-//media query
+//SCREENS 800PX AND UP
+@media (min-width: 800px){
+// 12 PRODUCTS GRID
+.product-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+.products{
+    width: 90%; 
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 400px; 
+    padding: 20px;
+.prod-img{
+    width: 70%;
+}
+.prod-desc{
+    font-size: 1.1rem;
+}
+.prod-price{
+    font-size: 1.1rem;
+}
+.prod-btn{
+    font-size: 1rem;
+    padding: 12px 25px;
+}}}}

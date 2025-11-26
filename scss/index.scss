@@ -37,12 +37,13 @@ nav ul{
     background-color: $color2;
     padding: 1%;
 li a{
-    text-decoration: none;}
+    text-decoration: none;
+    }
 li img{
     width: 25px;
     height: auto;
 li:hover{
-    color: $color1;
+    color: $color;
 }}}
 
 
@@ -126,7 +127,7 @@ h1{
     border: none;
     margin: 10px;
 &:hover{
-    background-color: $color1;
+    background-color: dimgray;
     color: white;
 }
 &:active{
@@ -140,6 +141,19 @@ h1{
     height: auto;
     margin-top: 20px;
 }
+
+//Contact me button
+.contact-me{
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    width: 100px;
+    height: auto;
+    margin: 15px auto;
+    padding: 10px;
+a{
+    text-decoration: none;
+}}
 
 
 //NEWSLETTER FORM
@@ -170,9 +184,7 @@ form{
 &:active{
     background-color: black;
     color: $color2;
-}
-}
-}
+}}}
 
 // FOOTER (socials & disclaimers)
 footer{
@@ -182,5 +194,51 @@ footer{
     width: 50px;
     height: auto;
     margin: 2%;
+}}
+
+
+
+
+
+// MEDIA QUERIES
+@media screen and (max-width: 800px) {
+// screens under 800px (width)
+.hero-btn {
+    font-size: 1.1rem;
+    padding: 10px 22px;
 }
+
+.product-grid .products {
+    width: 90%;
+}}
+
+
+//screens bigger than 800px
+@media screen and (min-width: 800px) {
+// Navigation spacing
+nav ul {
+    justify-content: space-between;
+    padding: 1% 10%;
 }
+    // HERO video button adjustment
+.hero-btn {
+    font-size: 1.5rem;
+    padding: 16px 32px;
+    top: 70%;
+}
+
+// 4 FEATURED PRODUCTS grid goes 2 columns on desktop
+.product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+.products {
+    width: 80%;
+    font-size: 1rem;
+}}
+
+// Ladies image bigger on desktop
+.ladies-img {
+    width: 80%;
+    margin: 40px auto;
+    display: block;
+}}

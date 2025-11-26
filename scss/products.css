@@ -6,6 +6,14 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.coupon-code {
+  background-color: #28e5fa;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+  padding: 1%;
+}
+
 .skinthia-logo {
   display: flex;
   flex-direction: row;
@@ -48,13 +56,14 @@ nav ul li img li:hover {
   grid-template-columns: 1fr;
   gap: 20px;
   justify-items: center;
+  margin: 10px;
 }
 .product-grid .products {
   width: 75%;
   text-align: center;
   font-size: 0.5rem;
   border-radius: 5px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px lightslategray;
   padding: 10px;
   background: white;
 }
@@ -87,7 +96,7 @@ nav ul li img li:hover {
   border: none;
 }
 .product-grid .products .prod-btn:hover {
-  background-color: #28e5fa;
+  background-color: dimgray;
   color: white;
 }
 .product-grid .products .prod-btn:active {
@@ -103,4 +112,45 @@ footer .socials img {
   width: 50px;
   height: auto;
   margin: 2%;
+}
+
+@media screen and (max-width: 799px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+  .skinthia-logo {
+    width: 35%;
+  }
+  footer .socials img {
+    width: 45px;
+  }
+}
+@media (min-width: 800px) {
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+  .product-grid .products {
+    width: 90%;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 400px;
+    padding: 20px;
+  }
+  .product-grid .products .prod-img {
+    width: 70%;
+  }
+  .product-grid .products .prod-desc {
+    font-size: 1.1rem;
+  }
+  .product-grid .products .prod-price {
+    font-size: 1.1rem;
+  }
+  .product-grid .products .prod-btn {
+    font-size: 1rem;
+    padding: 12px 25px;
+  }
 }/*# sourceMappingURL=products.css.map */
