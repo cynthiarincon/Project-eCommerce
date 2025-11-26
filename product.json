@@ -1,0 +1,98 @@
+[
+  {
+    "id": "prod-001",
+    "name": "Face Wash",
+    "price": 15,
+    "description": "A gentle, daily-use cleanser that thoroughly removes impurities without stripping the skin",
+    "photo": "assets/images/face-wash.png",
+    "featured": true
+  },
+  {
+    "id": "prod-002",
+    "name": "Moisturizer",
+    "price": 18,
+    "description": "A nourishing cream focused on hydration and strengthening the skin barrier",
+    "photo": "assets/images/moisturizer.png",
+    "featured": true
+  },
+  {
+    "id": "prod-003",
+    "name": "Sunscreen",
+    "price": 12,
+    "description": "A broad-spectrum sunscreen that is cosmetically elegant and leaves no white cast",
+    "photo": "assets/images/sunscreen.png",
+    "featured": true
+  },
+  {
+    "id": "prod-004",
+    "name": "Retinol Serum",
+    "price": 20,
+    "description": "A targeted serum designed to promote cell turnover and reduce signs of aging overnight",
+    "photo": "assets/images/serum.png",
+    "featured": true
+  },
+  {
+    "id": "prod-005",
+    "name": "Facial Toner",
+    "price": 10,
+    "description": "A refreshing toner that balances skin's pH, prepping it for better absorption of serums and moisturizers",
+    "photo": "assets/images/dark-toner.png",
+    "featured": false
+  },
+  {
+    "id": "prod-006",
+    "name": "Eye Treatment",
+    "price": 13,
+    "description": "A concentrated solution that targets dark circles and fine lines around the delicate eye area",
+    "photo": "assets/images/dark-eyetreatment.png",
+    "featured": false
+  },
+  {
+    "id": "prod-007",
+    "name": "Brightening Serum",
+    "price": 15,
+    "description": "A Vitamin C serum that boosts radiance, evens skin tone, and protects against environmental damage",
+    "photo": "assets/images/dark-serum.png",
+    "featured": false
+  },
+  {
+    "id": "prod-008",
+    "name": "Mini Travel Set",
+    "price": 22,
+    "description": "A compact kit of essential skincare products for maintaining your routine while traveling or on the go",
+    "photo": "assets/images/dark-travelset.png",
+    "featured": false
+  },
+  {
+    "id": "prod-009",
+    "name": "Lip Balm",
+    "price": 8,
+    "description": "A deeply hydrating treatment that protects lips, seals in moisture, and prevents chapping",
+    "photo": "assets/images/dark-lipbalm.png",
+    "featured": false
+  },
+  {
+    "id": "prod-010",
+    "name": "Under Eye Patches",
+    "price": 18,
+    "description": "Reusable silicone patches designed to maximize serum absorption and reduce puffiness under the eyes",
+    "photo": "assets/images/dark-eyepatches.png",
+    "featured": false
+  },
+  {
+    "id": "prod-011",
+    "name": "T-shirt Merch",
+    "price": 15,
+    "description": "A comfortable, minimalist branded T-shirt showcasing the Skínthia CORE System design",
+    "photo": "assets/images/dark-shirt.png",
+    "featured": false
+  },
+  {
+    "id": "prod-012",
+    "name": "Hat Merch",
+    "price": 18,
+    "description": "A sleek, dark baseball cap featuring the simple and modern Skínthia CORE System branding",
+    "photo": "assets/images/dark-hat.png",
+    "featured": false
+  }
+]
