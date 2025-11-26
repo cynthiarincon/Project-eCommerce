@@ -28,6 +28,7 @@
     </nav>
 </header>
 
+<!--CONTACT FORM-->
     <div class="contact-container">
         <img class="skinthia-logo" src="assets/images/skinthia-logo.png" alt="skinthia logo">
         
@@ -35,11 +36,11 @@
             <img src="assets/images/skinthia-models.png" alt="smiling girl">
 
             <form>
-            <label>Contact Me</label> <br>
-            <input type="text" placeholder="Your Name" required> <br>
-            <input type="email" placeholder="Your Email" required> <br>
-            <input class="message-box" type="text" placeholder="Message" required> <br>
-            <button type="submit">Submit</button>
+                <label for="contact-name">Contact Me</label> <br>
+                <input type="text" id="contact-name" name="name" placeholder="Your Name" required> <br>
+                <input type="email" id="contact-email" name="email" placeholder="Your Email" required> <br>
+                <input class="message-box" type="text" id="contact-message" name="message" placeholder="Message" required> <br>
+                <button type="submit">Submit</button>
             </form>
         </div>
     </div>
@@ -62,5 +63,6 @@
         </p>
     </footer>
 
+<script src="/javascript/contact.js"></script>
 </body>
 </html>
