@@ -1,0 +1,118 @@
+$color1: #28e5fa;
+$color2: #ffff57;
+$font1: "Montserrat", sans-serif;
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: $font1;
+}
+
+.skinthia-logo{
+    display: flex;
+    flex-direction: row;
+    margin: 2% auto 0;
+    width: 35%;
+    height: auto;
+}
+
+// NAV BAR
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    background-color: $color2;
+    padding: 1%;
+li a{
+    text-decoration: none;}
+li img{
+    width: 25px;
+    height: auto;
+li:hover{
+    color: $color1;
+}}}
+
+.core-title{
+    text-align: center;
+}
+.dark-prod-img{
+    width:100%;
+    height: auto;
+}
+
+
+//12 PRODUCTS
+.product-grid{
+    display: grid;
+    grid-template-columns: 1fr; // mobile-first: one column
+    gap: 20px;
+    justify-items: center;
+
+.products{
+    width: 75%;
+    text-align: center;
+    font-size: .5rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 10px;
+    background: white;
+
+.prod-title{
+    background-color: $color2;
+    padding: 2%;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+}
+.prod-img{
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+.prod-desc{
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #333;
+}
+.prod-price{
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.prod-btn{
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: $color1;
+    color: white;
+    border: none;
+    &:hover{
+        background-color: $color1;
+        color: white;
+    }
+    &:active{
+        background-color: black;
+        color: $color2;
+    }
+}
+}
+}
+
+
+
+// FOOTER (socials & disclaimers)
+footer{
+    text-align: center;
+    background-color: $color2;
+.socials img{
+    width: 50px;
+    height: auto;
+    margin: 2%;
+}
+}
+
+
+
+//media query
