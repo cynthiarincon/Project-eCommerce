@@ -4,86 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="scss/index.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <title>Skinthia</title>
 </head>
 <body>
     <p class="coupon-code" >Use code CYNTHIA25 at checkout to enjoy 25% off your first order!</p>
 
+    <header>    
     <img class="skinthia-logo" src="assets/images/skinthia-logo.png" alt="skinthia logo">
 
     <!----------NAV BAR----------> 
+
     <nav>
         <ul>
             <li class="home"><a href="index.html">HOME</a></li>
             <li class="prod"><a href="products.html">PRODUCTS</a></li>
-            <li class="about"><a href="about.html">ABOUT ME</a></li>
             <li class="about"><a href="contact.html">CONTACT</a></li>
-            <li class="login"><a href="login.html"><img src="assets/images/login.png"></a></li>
-            <li class="cart"><a href="cart.html"><img src="assets/images/cart.png"></a></li>
+            <li class="login"><a href="placeholder.html"><img src="assets/images/login.png" alt="login icon"></a></li>
+            <li class="cart"><a href="placeholder.html"><img src="assets/images/cart.png" alt="cart icon"></a></li>
+
         </ul>
     </nav>
+</header>
+
 
     <!-----------MAIN------------> 
    <main>
-    <!----hero---->
-        <video autoplay loop> 
-            <source src="assets/videos/face-cleaning.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+    <!----HERO---->
+        <div class="hero">
+            <video class="hero-vid" autoplay loop muted playsinline> 
+                <source src="assets/videos/face-cleaning.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <a href="products.html" class="hero-btn">Shop Now</a>
+        </div>
 
-    <!-----sale----->
-        <img class="sale-image" src="assets/images/sale.jpg" alt="sale image">
+    <!----featured products
+     Each product should show a photo, name, price and a quick description--->
 
-    <!----featured products--->
     <section class="feat-prod">
         <h1>FEATURED PRODUCTS</h1>
     </section>
 
     <div class="product-grid" >
         <div class="products">
-            <h1>Face Wash</h1>
-            <img src="assets/images/face-wash.png" alt="face wash">
-            <h2>A gentle, daily-use cleanser that thoroughly removes impurities without stripping the skin</h2>
-            <h3>$15 <button type="button">Add to cart</button></h3>
+            <h2 class="prod-title">Face Wash</h2>
+            <img class="prod-img" src="assets/images/face-wash.png" alt="face wash">
+            <p class="prod-desc">A gentle, daily-use cleanser that thoroughly removes impurities without stripping the skin</p>
+            <p class="prod-price">$15</p>
+            <button class="prod-btn" type="button">Add to cart</button>
         </div>
 
         <div class="products">
-            <h1>Moisturizer</h1>
-            <img src="assets/images/moisturizer.png" alt="moisturizer">
-            <h2>A nourishing cream focused on hydration and strengthening the skin barrier</h2>
-            <h3>$18 <button type="button">Add to cart</button></h3>
+            <h2 class="prod-title">Moisturizer</h2>
+            <img class="prod-img" src="assets/images/moisturizer.png" alt="moisturizer">
+            <p class="prod-desc">A nourishing cream focused on hydration and strengthening the skin barrier</p>
+            <p class="prod-price">$18</p>
+            <button class="prod-btn" type="button">Add to cart</button>
         </div>
 
         <div class="products">
-            <h1>Sunscreen</h1>
-            <img src="assets/images/sunscreen.png" alt="sunscreen">
-            <h2>A broad-spectrum sunscreen that is cosmetically elegant and leaves no white cast</h2>
-            <h3>$12 <button type="button">Add to cart</button></h3>
+            <h2 class="prod-title">Sunscreen</h2>
+            <img class="prod-img" src="assets/images/sunscreen.png" alt="sunscreen">
+            <p class="prod-desc">A broad-spectrum sunscreen that is cosmetically elegant and leaves no white cast</p>
+            <p class="prod-price">$12</p>
+            <button  class="prod-btn"type="button">Add to cart</button>
         </div>
 
         <div class="products">
-            <h1>Retinol Serum</h1>
-            <img src="assets/images/serum.png" alt="face serum">
-            <h2>A targeted serum designed to promote cell turnover and reduce signs of aging overnight</h2>
-            <h3>$20 <button type="button">Add to cart</button></h3>
+            <h2 class="prod-title">Retinol Serum</h2>
+            <img class="prod-img" src="assets/images/serum.png" alt="face serum">
+            <p class="prod-desc">A targeted serum designed to promote cell turnover and reduce signs of aging overnight</p>
+            <p class="prod-price">$20</p>
+            <button class="prod-btn" type="button">Add to cart</button>
         </div>
-
     </div>
 
-    <!----reviews---->
-
-
-
+    <img class="ladies-img" src="assets/images/ladies.png" alt="product line and ladies in the background">
 
     <!---newsletter--->
-    <form>
-        <label for="news-email">Join our monthly newsletter!</label> <br>
-        <input type="email" id="news-email" name="news-email" placeholder="Email">
-        <button type="submit">JOIN</button>
+    <section class="newsletter">
+        <form>
+            <label class="form-label" for="news-email">Join our monthly newsletter!</label> <br>
+            <input class="news-input" type="email" id="news-email" name="news-email" placeholder="Email" required>
+            <button class="news-btn" type="submit">JOIN</button>
 
-        <p>*By entering your email here or anywhere on our site, you agree to receive marketing emails from Skinthia. Unsubscribe at any time.</p>
-    </form>
+            <p>*By entering your email here or anywhere on our site, you agree to receive marketing emails from Skinthia. Unsubscribe at any time.</p>
+        </form>
+    </section>
+
+    
    </main> 
 
     <!----------FOOTER----------> 

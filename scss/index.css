@@ -3,7 +3,7 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .coupon-code {
@@ -26,9 +26,13 @@ nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   list-style: none;
   background-color: #ffff57;
   padding: 1%;
+}
+nav ul li a {
+  text-decoration: none;
 }
 nav ul li img {
   width: 25px;
@@ -38,44 +42,137 @@ nav ul li img li:hover {
   color: #28e5fa;
 }
 
-video {
+.hero {
+  position: relative;
+}
+.hero .hero-vid {
   max-width: 100vw;
   height: auto;
 }
-
-.sale-image {
-  width: 100vw;
-  height: auto;
+.hero .hero-btn {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 14px 28px;
+  background: white;
+  color: rgb(0, 149, 175);
+  font-weight: bold;
+  font-size: 1.3rem;
+  border-radius: 6px;
+  text-decoration: none;
+  border: none;
+  opacity: 0.9;
+}
+.hero .hero-btn:hover {
+  background-color: #ffff57;
+}
+.hero .hero-btn:active {
+  background-color: black;
+  color: #ffff57;
 }
 
 .feat-prod {
   text-align: center;
   background-color: #28e5fa;
+  font-size: 0.75rem;
+}
+.feat-prod h1 {
+  margin: 0;
+  padding: 10px;
 }
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   justify-items: center;
+  gap: 20px;
 }
 .product-grid .products {
   width: 75%;
   height: auto;
   font-size: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
-.product-grid .products h1 {
+.product-grid .products .prod-title {
+  background-color: #ffff57;
+  padding: 2%;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1rem;
+}
+.product-grid .products .prod-img {
+  width: 80%;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.prod-desc {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #333;
+}
+
+.prod-price {
+  font-size: 1rem;
+}
+
+.prod-btn {
+  padding: 10px 20px;
+  border-radius: 8px;
   background-color: #28e5fa;
+  color: white;
+  border: none;
+  margin: 10px;
 }
-.product-grid .products img {
-  width: 150px;
+.prod-btn:hover {
+  background-color: #28e5fa;
+  color: white;
+}
+.prod-btn:active {
+  background-color: black;
+  color: #ffff57;
+}
+
+.ladies-img {
+  width: 100%;
   height: auto;
-  margin: 5%;
+  margin-top: 20px;
 }
 
 form {
   text-align: center;
   background-color: #28e5fa;
   padding: 1%;
+}
+form .form-label {
+  margin-top: 10px;
+}
+form .news-input {
+  border: none;
+  margin: 10px;
+  padding: 7px;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.news-btn {
+  border: none;
+  background-color: #ffff57;
+  padding: 7px;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.news-btn:hover {
+  background-color: white;
+  color: #28e5fa;
+}
+.news-btn:hover:active {
+  background-color: black;
+  color: #ffff57;
 }
 
 footer {
